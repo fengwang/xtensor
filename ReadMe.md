@@ -1,10 +1,11 @@
 # __XTENSOR__ in a single header file.
 
+
+Putting <https://github.com/nlohmann/json>, <https://github.com/xtensor-stack/xsimd> and <https://github.com/xtensor-stack/xtl> together with <https://github.com/xtensor-stack/xtensor>, for easy of use. (dating 2020.08.03)
+
 ```bash
 cat `nlohmann/json` `xtensor-stack/xsimd` `xtensor-stack/xtl` `xtensor-stack/xtensor` > `fengwang/xtensor`
 ```
-
-Putting <https://github.com/nlohmann/json>, <https://github.com/xtensor-stack/xsimd> and <https://github.com/xtensor-stack/xtl> together with <https://github.com/xtensor-stack/xtensor>, for easy of use. (dating 2020.08.03)
 
 
 ## Dependency:
@@ -13,6 +14,7 @@ Putting <https://github.com/nlohmann/json>, <https://github.com/xtensor-stack/xs
 
 ## Example Code:
 
+All `<xtensor-stack/xtensor>` code should work by simply copying the header file `xtensor.hpp` in this repo  and adding `#include "xtensor.hpp"` to your cpp source code:
 ```cpp
 //test.cc
 #include "xtensor.hpp"
@@ -35,7 +37,7 @@ int main()
 
 ## Simple Compilation Command:
 ```bash
-g++ -o test test.cc -O2 -Wall -ltbb
+g++ -o test test.cc -std=c++2a -O2 -Wall -ltbb
 ```
 ## Documentation
 
